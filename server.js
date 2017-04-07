@@ -36,9 +36,9 @@ app.use((req, res, next) => {
 
 // Create an instance of Pusher
 const pusher = new Pusher({
-    appId: '319599',
-    key: '8d2eae921be61dbafd47',
-    secret: 'aadd74d727387a8dad93',
+    appId: 'xxxxxx',
+    key: 'xxxxxxxxxxxxxxxxx',
+    secret: 'xxxxxxxxxxxxxxxxxxx',
     encrypted: true
 });
 
