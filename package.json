@@ -11,11 +11,9 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.1",
-    "connect-redis": "^3.2.0",
     "dotenv": "^4.0.0",
     "express": "^4.15.2",
     "express-session": "^1.15.2",
-    "pusher": "^1.5.1",
-    "redis": "^2.7.1"
+    "pusher": "^1.5.1"
   }
 }
