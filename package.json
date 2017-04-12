@@ -1,7 +1,7 @@
 {
-  "name": "pusher-group-chat-api",
+  "name": "pusher-group-chat",
   "version": "1.0.0",
-  "description": "A simple API for pusher group chat app",
+  "description": "A simple group chat app using Vue.js and Pusher",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
