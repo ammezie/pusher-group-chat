@@ -9,7 +9,7 @@ const app = new Vue({
     data: {
         joined: false,
         username: '',
-        members: [],
+        members: '',
         newMessage: '',
         messages: [],
         status: ''
