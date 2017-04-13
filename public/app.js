@@ -1,4 +1,4 @@
-const pusher = new Pusher('8d2eae921be61dbafd47', {
+const pusher = new Pusher('xxxxxxxxxxxxxxxxxxxx', {
     encrypted: true,
     authEndpoint: 'pusher/auth'
 });
