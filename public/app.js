@@ -19,6 +19,9 @@ const app = new Vue({
         joinChat() {
             axios.post('join-chat', {username: this.username})
                 .then(response => {
+                    // User has joined the chat
+                    this.joined = true;
+
                     const channel = pusher.subscribe('presence-groupChat');
 
                     channel.bind('pusher:subscription_succeeded', (members) => {
@@ -29,8 +32,6 @@ const app = new Vue({
                     channel.bind('pusher:member_added', (member) => {
                         this.status = `${member.id} joined the chat`;
                     });
-
-                    this.joined = true;
 
                     // Listen for chat messages
                     this.listen();
