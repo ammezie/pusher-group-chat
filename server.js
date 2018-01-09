@@ -25,6 +25,7 @@ const pusher = new Pusher({
     appId:     process.env.PUSHER_APP_ID,
     key:       process.env.PUSHER_APP_KEY,
     secret:    process.env.PUSHER_APP_SECRET,
+    cluster:   process.env.PUSHER_APP_CLUSTER,
     encrypted: true
 });
 
@@ -35,14 +36,14 @@ app.get('/', (req, res) => {
 app.post('/join-chat', (req, res) => {
     // store username in session
     req.session.username = req.body.username;
-    
+
     res.json('Joined');
 });
 
 app.post('/pusher/auth', (req, res) => {
     const socketId = req.body.socket_id;
     const channel = req.body.channel_name;
-    
+
     // Retrieve username from session and use as presence channel user_id
     const presenceData = {
         user_id: req.session.username
