@@ -1,6 +1,6 @@
 # Pusher Group Chat
 
-A simple group chat app using Vue.js and Pusher
+A simple group chat app using Express, Vue.js and Pusher. Follow the tutorial [https://pusher.com/tutorials/group-chat-javascript](https://pusher.com/tutorials/group-chat-javascript)
 
 ## Getting Started
 
@@ -24,7 +24,9 @@ npm install
 
 Duplicate `.env.example` and rename it `.env`
 
-## Setup Pusher
+### Prerequisites
+
+#### Setup Pusher
 
 If you don't have one already, create a free Pusher account at [https://pusher.com/signup](https://pusher.com/signup) then login to your dashboard and create an app.
 
@@ -52,3 +54,13 @@ npm start
 ```
 
 and visit [http://localhost:000/](http://localhost:3000/) to see the application in action.
+
+## Built With
+
+* [Pusher](https://pusher.com) - APIs to enable devs building realtime features
+* [Express](https://expressjs.com) - Fast, unopinionated, minimalist web framework for Node.js
+* [Vue.js](https://vuejs.org) - The Progressive JavaScript Framework
+
+## Acknowledgments
+
+* [Bootsnipp chat snippet](http://bootsnipp.com/snippets/featured/collapsible-chat-widget)
