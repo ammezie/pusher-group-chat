@@ -53,7 +53,7 @@ And finally, start the application:
 npm start
 ```
 
-and visit [http://localhost:000/](http://localhost:3000/) to see the application in action.
+and visit [http://localhost:3000/](http://localhost:3000/) to see the application in action.
 
 ## Built With
 
